@@ -4,7 +4,7 @@ import compression from "vite-plugin-compression";
 import path from "path";
 
 export default defineConfig(({ mode }) => {
-  const lang = ["en", "ru", "ptBR", "cn"].includes(mode) ? mode : "ptBR";
+  const lang: string = ["en", "ru", "ptBR", "cn"].includes(mode) ? mode : "ptBR";
 
   return {
     define: {
