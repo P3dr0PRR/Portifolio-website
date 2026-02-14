@@ -37,7 +37,7 @@ code {
 }
 
 .marquee {
-  animation: scroll 5s linear infinite;
+  animation: scroll 500s linear infinite;
   will-change: transform;
   flex-shrink: 0;
 }
