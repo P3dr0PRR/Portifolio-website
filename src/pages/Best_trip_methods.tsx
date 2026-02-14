@@ -1,5 +1,25 @@
 import { UserRound, Link as LinkIcon, Github } from "lucide-react";
 
+import img1 from "../assets/projects/BestTripMethods/btm1.png";
+import img2 from "../assets/projects/BestTripMethods/btm2.png";
+import img3 from "../assets/projects/BestTripMethods/btm3.png";
+import img4 from "../assets/projects/BestTripMethods/btm4.png";
+
+
+const imgs = [
+  { src: img1},
+  { src: img2},
+  { src: img3},
+  { src: img4},
+]
+
+const tools = [
+  { name: "Html5"},
+  { name: "Tailwind"},
+  { name: "React"},
+  { name: "Good practices"},
+]
+
 export function BestTripMethods() {
   return (
     <section className="mx-32 bg-pink-400">
@@ -14,28 +34,17 @@ export function BestTripMethods() {
           A site that helps you find the best way to travel based on your preferences.
         </p>
 
-        <ul className="items-end flex space-x-4 my-2">
-          <li>
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              Html5
-            </p>
-          </li>
-          <li>
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              Tailwind
-            </p>
-          </li>
-          <li>
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              React
-            </p>
-          </li>
-          <li>
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              Good practices
-            </p>
-          </li>
-        </ul>
+      <div className="grid-cols-2 md:flex gap-4 space-y-2">
+        {tools.map((tool) => (
+          <p
+            key={tool.name}
+            className="bg-purple-500 text-gray-50 px-4 py-2 rounded-full inline-flex items-center justify-center text-base md:text-lg leading-tight whitespace-nowrap m-1"
+          >
+            {tool.name}
+          </p>
+        ))}
+      </div>
+
       </header>
 
       <article className="mb-4">
@@ -146,7 +155,7 @@ export function BestTripMethods() {
       <article className="mb-4">
         <header>
           <div className="border-l-8 border-purple-500 pl-4">
-            <h2 className="text-4xl text-gray-50 group bg-lime-400 w-fit">
+            <h2 className="text-2xl md:text-4xl text-gray-50 group bg-lime-400 w-fit">
               <span className="hover:underline">Demonstration images of the project</span>
               <span className="mx-2 opacity-0 group-hover:opacity-100 text-purple-500 transition-opacity">
                 #
@@ -155,24 +164,16 @@ export function BestTripMethods() {
           </div>
         </header>
 
-        <div className="flex flex-col gap-4 mt-4">
-          <div className="flex justify-evenly">
-            <picture>
-              <img src="/imgs/proj1.png" alt="Project demonstration image 1" className="rounded-lg" />
-            </picture>
-            <picture>
-              <img src="/imgs/proj2.png" alt="Project demonstration image 2" className="rounded-lg" />
-            </picture>
-          </div>
-
-          <div className="flex justify-evenly">
-            <picture>
-              <img src="/imgs/proj3.png" alt="Project demonstration image 3" className="rounded-lg" />
-            </picture>
-            <picture>
-              <img src="/imgs/proj4.png" alt="Project demonstration image 4" className="rounded-lg" />
-            </picture>
-          </div>
+        <div className="flex flex-col md:grid lg:grid-cols-2 gap-4 mt-4">
+        
+          {imgs.map((img, index) => (
+            <img
+              key={index}
+              className="rounded-lg"
+              src={img.src}
+            />
+          ))}
+        
         </div>
       </article>
     </section>

@@ -7,9 +7,11 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Header />
-      <main>
-        <Router />
-      </main>
+      <main className="flex justify-center bg-blue-300">
+  <div className="w-full max-w-6xl px-6">
+    <Router />
+  </div>
+</main>
       <Footer />
     </BrowserRouter>
   );

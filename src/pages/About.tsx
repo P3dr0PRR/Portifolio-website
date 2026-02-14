@@ -1,16 +1,36 @@
+import Pedro from "../assets/pedro/Pedro.jpg";
+import CSS from "../assets/techs/CSSWhite.png";
+import GoodPractices from "../assets/techs/GoodPraticesWhite.png";
+import HTML from "../assets/techs/HTMLWhite.png";
+import JS from "../assets/techs/JSWhite.png";
+import React from "../assets/techs/REACTWhite.png";
+import Tailwind from "../assets/techs/TAILWINDWhite.png";
+import TS from "../assets/techs/TSWhite.png";
+
+const techs = [
+  { name: "HTML5", img: HTML },
+  { name: "CSS3", img: CSS },
+  { name: "Tailwind CSS", img: Tailwind },
+  { name: "JavaScript", img: JS },
+  { name: "React", img: React },
+  { name: "Good Practices", img: GoodPractices },
+  { name: "TypeScript", img: TS },
+];
 export function About() {
   return (
     <section>
-      <div className="flex justify-between px-6 gap-4 bg-lime-800">
+      <div className="flex flex-col md:flex-row justify-center items-center md:justify-between px-6 gap-4 bg-lime-400">
         <img
-          src="/imgs/Pedro.jpg"
+          src={Pedro}
           alt="Pedro"
-          className="w-96 h-96 rounded-xl"
+          className="w-full h-auto sm:w-96 sm:h-96 rounded-xl"
         />
-        <div className="flex flex-col bg-sky-800 justify-between p-6">
+        <div className="flex flex-col justify-between p-6">
           <div>
-            <h1 className="text-4xl font-bold mb-4 text-gray-50"><span className="text-purple-500">../</span>About Me</h1>
-            <p className="text-lg mb-4">
+            <h1 className="text-4xl font-bold mb-4 text-gray-50">
+              <span className="text-purple-500">../</span>About Me
+            </h1>
+            <p className="text-lg mb-4 text-gray-300">
               Hello! I'm Pedro, a passionate software developer with a love for
               creating innovative solutions. With experience in various
               programming languages and frameworks, I enjoy tackling complex
@@ -21,77 +41,40 @@ export function About() {
               <span className="font-bold text-purple-500">TypeScript</span>.
             </p>
           </div>
-          <div className="items-end flex space-x-4">
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              Html5
-            </p>
-
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">Css3</p>
-
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50  px-4 py-1 rounded-full">
-              Tailwind
-            </p>
-
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              JavaScript
-            </p>
-
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              React
-            </p>
-
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              Good practices
-            </p>
-
-            <p className="text-lg bg-purple-500 hover:bg-purple-400 text-gray-50 px-4 py-1 rounded-full">
-              TypeScript
-            </p>
+          <div className="flex flex-wrap gap-4 mt-4">
+            {techs.map((tech) => (
+              <p
+                key={tech.name}
+                className="bg-purple-500 text-gray-50 px-4 py-2 rounded-full inline-flex items-center justify-center text-base md:text-lg leading-tight whitespace-nowrap"
+              >
+                {tech.name}
+              </p>
+            ))}
+            
           </div>
         </div>
       </div>
 
-      <section aria-labelledby="skills-title" className="my-4">
+      <section aria-labelledby="skills-title" className="my-4 bg-gray-400">
         <h2 id="skills-title" className="sr-only">
           Technical Skills
         </h2>
 
-        <ul className="bg-transparent flex justify-evenly">
-          <li className="border border-gray-300 rounded-md flex flex-col items-center">
-            <img className="w-30 h-24" src="/imgs/HTMLWhite.png" alt="HTML5 logo" />
-            <span className="text-gray-50">HTML5</span>
-          </li>
-
-          <li className="border border-gray-300 rounded-md flex flex-col items-center">
-            <img className="w-30 h-24" src="/imgs/CSSWhite.png" alt="CSS3 logo" />
-            <span className="text-gray-50">CSS3</span>
-          </li>
-
-          <li className="border border-gray-300 rounded-md flex flex-col items-center">
-            <img className="w-30 h-24" src="/imgs/TAILWINDWhite.png" alt="Tailwind CSS logo" />
-            <span className="text-gray-50">Tailwind CSS</span>
-          </li>
-
-          <li className="border border-gray-300 rounded-md flex flex-col items-center">
-            <img className="w-30 h-24" src="/imgs/JSWhite.png" alt="JavaScript logo" />
-            <span className="text-gray-50">JavaScript</span>
-          </li>
-
-          <li className="border border-gray-300 rounded-md flex flex-col items-center">
-            <img className="w-30 h-24" src="/imgs/REACTWhite.png" alt="React logo" />
-            <span className="text-gray-50">React</span>
-          </li>
-
-          <li className="border border-gray-300 rounded-md flex flex-col items-center">
-            <img className="w-30 h-24" src="/imgs/GoodPraticesWhite.png" alt="Good practices badge" />
-            <span className="text-gray-50">Good Practices</span>
-          </li>
-
-          <li className="border border-gray-300 rounded-md flex flex-col items-center">
-            <img className="w-30 h-24" src="/imgs/TSWhite.png" alt="TypeScript logo" />
-            <span className="text-gray-50">TypeScript</span>
-          </li>
-        </ul>
+        <div className="flex gap-2 justify-evenly">
+          {techs.map((tech) => (
+            <div
+              key={tech.name}
+              className="border border-gray-300 rounded-md flex flex-col items-center"
+            >
+              <img
+                src={tech.img}
+                alt={`${tech.name} logo`}
+                className="w-30 h-24"
+              />
+              <p className="text-gray-300 text-center">{tech.name}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </section>
   );

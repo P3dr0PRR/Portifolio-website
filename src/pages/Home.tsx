@@ -4,12 +4,16 @@ import { Contact } from "./Contact";
 import { About } from "./About";
 import { Github, Linkedin } from "lucide-react";
 
+
+
+
 export function Home() {
   return (
     <>
-      <section className="flex px-6 mb-4">
-        <div className="flex flex-col bg-purple-800">
-          <div className="flex flex-col justify-center items-start">
+  <section className="bg-pink-600 mt-8 mb-4 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden">
+  <div className="w-full max-w-6xl mx-auto px-6 flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-40 xl:gap-80">
+        <div className="flex flex-col p-4 border border-purple-900 items-center text-center w-fit mx-auto lg:mx-0 lg:items-start lg:text-left">
+          <div className="flex flex-col justify-center items-center lg:items-start">
             <h1 className="text-3xl text-gray-50">Hello, I&apos;m Pedro Paulo</h1>
             <p className="text-gray-300">
               I&apos;m a Developer transforming ideas into reality on the digital world.
@@ -29,10 +33,11 @@ export function Home() {
           </div>
         </div>
 
-        <div className="flex-1 flex items-center justify-center">
+        <div className="hidden lg:block flex-1 flex items-center justify-center">
           <CodePreviewCard />
         </div>
-      </section>
+      </div>
+</section>
 
       <About />
       <Projects />

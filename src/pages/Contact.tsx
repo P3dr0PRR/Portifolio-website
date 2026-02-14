@@ -1,5 +1,14 @@
 import { Github, Linkedin, Briefcase } from 'lucide-react';
 
+const projectTypes = [
+  { name: 'Freelance'},
+  { name: 'Full-time'},
+  { name: 'UI/UX'},
+  { name: 'Front-end'},
+  { name: 'StartUp'},
+  { name: 'OpenSource'},
+]
+
 export function Contact() {
   return (
     <section className="mx-6 space-y-4 m-4">
@@ -16,7 +25,7 @@ export function Contact() {
           <span className="mx-1 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
             Build
           </span>{" "}
-          something togueder
+          something together!
         </h1>
         <p className="text-md mt-4 text-gray-300">
           Open to oportunities, collaborations, and freelance work. Feel free to
@@ -28,7 +37,7 @@ export function Contact() {
         <header className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent text-xl mb-4">
           // Send message
         </header>
-        <div className="flex justify-between gap-4">
+        <div className="flex flex-col md:flex-row justify-between gap-4">
           <div className="flex flex-col w-full space-y-2">
             <p className="text-gray-300">NAME</p>
             <input
@@ -106,27 +115,17 @@ export function Contact() {
 
       <article className="border border-purple-900 rounded-md p-4 flex flex-col items-center">
 <header className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent text-xl mb-4">
-          <Briefcase size={24} className="inline-block mr-2" /> Projects tipes
+          <Briefcase size={24} className="inline-block mr-2 text-purple-500" /> Projects tipes
         </header>
          <div className="flex gap-4 flex-wrap justify-center">
-          <p className="text-lg bg-purple-700 hover:bg-purple-600 text-gray-50 px-2 py-1 rounded-full">
-              Freelance
+          {projectTypes.map((type) => (
+            <p
+              key={type.name}
+              className="bg-purple-600 hover:bg-purple-500 text-gray-50 px-4 py-2 rounded-full inline-flex items-center justify-center text-base md:text-lg leading-tight whitespace-nowrap"
+            >
+              {type.name}
             </p>
-                <p className="text-lg bg-purple-700 hover:bg-purple-600 text-gray-50 px-2 py-1 rounded-full">
-              Full-time
-            </p>
-             <p className="text-lg bg-purple-700 hover:bg-purple-600 text-gray-50 px-2 py-1 rounded-full">
-              UI/UX
-            </p>
-             <p className="text-lg bg-purple-700 hover:bg-purple-600 text-gray-50 px-2 py-1 rounded-full">
-              FRONT-END
-            </p>
-             <p className="text-lg bg-purple-700 hover:bg-purple-600 text-gray-50 px-2 py-1 rounded-full">
-             StartUp
-            </p>
-             <p className="text-lg bg-purple-700 hover:bg-purple-600 text-gray-50 px-2 py-1 rounded-full">
-              OpenSource
-            </p>
+          ))}
             </div>
       </article>
     </section>

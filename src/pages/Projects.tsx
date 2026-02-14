@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export function Projects() {
   return (
-    <section>
+    <section className="space-y-3">
       <header className="flex flex-col items-start gap-4 mb-6 font-bold mx-6 bg-pink-600 border-b-2 border-gray-400 pb-4 text-gray-50">
         <h2 className="text-xl">
           <span className="text-purple-500">../</span>featured:
@@ -11,8 +11,8 @@ export function Projects() {
         <h3 className="text-4xl ">Featured Projects</h3>
       </header>
 
-      <div className="flex items-center justify-center gap-4">
-        <div className="w-1/3 h-64 bg-gradient-to-r from-slate-600 to-slate-700 rounded-lg m-4 border border-purple-900 items-center justify-center flex flex-col text-gray-50">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 bg-yellow-300 border border-purple-900 rounded-lg">
+        <div className="w-full md:w-1/3 h-64 bg-gradient-to-r from-slate-600 to-slate-700 rounded-lg m-4 border border-purple-900 items-center justify-center flex flex-col text-gray-50 px-4">
           <div className="flex items-center justify-center">
             <Backpack className="w-12 h-12 text-purple-400 mt-4" />
             <p className="mt-4 text-5xl">Best trip methods</p>
@@ -21,7 +21,7 @@ export function Projects() {
           <p className="mt-2 text-md">This site help you find the best method to travel for you</p>
         </div>
 
-        <div className="flex-1 border border-purple-900 w-1/3 h-64 mr-4 rounded-lg bg-transparent">
+        <div className="flex-1 border border-purple-900 w-full md:w-1/3 h-64 md:mr-4 rounded-lg bg-transparent px-4">
           <div>
             <h2 className="mt-4 text-5xl text-gray-50">Best trip methods</h2>
           </div>
@@ -50,8 +50,8 @@ export function Projects() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-4">
-        <div className="flex-1 border border-purple-900 w-1/3 h-64 ml-4 rounded-lg bg-transparent">
+       <div className="flex flex-col md:flex-row items-center justify-center gap-4 bg-yellow-800 border-purple-900 rounded-lg">
+       <div className="flex-1 border border-purple-900 w-full md:w-1/3 h-64 md:mr-4 rounded-lg bg-transparent px-4">
           <div>
             <h2 className="mt-4 text-5xl text-gray-50">Best trip methods</h2>
           </div>
@@ -79,7 +79,7 @@ export function Projects() {
           </div>
         </div>
 
-        <div className="w-1/3 h-64 bg-gradient-to-r from-slate-600 to-slate-700 rounded-lg m-4 border border-purple-900 items-center justify-center flex flex-col text-gray-50">
+       <div className="w-full md:w-1/3 h-64 bg-gradient-to-r from-slate-600 to-slate-700 rounded-lg border border-purple-900 items-center justify-center flex flex-col text-gray-50 px-4">
           <div className="flex items-center justify-center">
             <Backpack className="w-12 h-12 text-purple-400 mt-4" />
             <p className="mt-4 text-5xl">Best trip methods</p>
