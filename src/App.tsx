@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <BrowserRouter>
       <CanvasGalaxy />
 
-      <div className="relative min-h-screen text-gray-100">
+      <div className="relative min-h-screen text-gray-100 flex flex-col justify-between">
         <Header />
 
         <main className="flex justify-center">

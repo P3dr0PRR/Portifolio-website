@@ -62,7 +62,7 @@ export function About() {
 
         <div className="overflow-hidden border-x-8 border-purple-500">
           <div className="flex gap-4">
-            {[...techs, ...techs, ...techs].map((tech) => (
+            {[...techs, ...techs, ...techs, ...techs, ...techs, ...techs, ...techs, ...techs, ...techs, ...techs].map((tech) => (
             <div
               key={tech.name}
               className="border border-gray-300 rounded-md marquee w-max flex flex-col items-center gap-6"
