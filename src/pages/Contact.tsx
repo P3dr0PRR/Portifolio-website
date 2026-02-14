@@ -12,7 +12,7 @@ const projectTypes = [
 export function Contact() {
   return (
     <section className="mx-6 space-y-4 m-4">
-      <header className="flex flex-col items-start gap-4 mb-6 font-bold bg-pink-600 border-b-2 border-gray-400 pb-4 text-gray-50">
+      <header className="flex flex-col items-start gap-4 mb-6 font-bold border-b-2 border-gray-400 pb-4 text-gray-50">
         <h2 className="text-xl">
           <span className="text-purple-500">../</span>Contact:
         </h2>
@@ -20,7 +20,7 @@ export function Contact() {
       </header>
 
       <article>
-        <h1 className="text-7xl font-bold w-[50%] text-gray-50">
+        <h1 className="text-6xl md:text-7xl font-bold w-[50%] text-gray-50">
           Let's{" "}
           <span className="mx-1 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
             Build
@@ -34,8 +34,8 @@ export function Contact() {
       </article>
 
       <article className="border border-purple-900 rounded-md p-4 space-y-4">
-        <header className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent text-xl mb-4">
-          // Send message
+    <header className="text-xl">
+          <span className="text-purple-500">../</span>Send Message
         </header>
         <div className="flex flex-col md:flex-row justify-between gap-4">
           <div className="flex flex-col w-full space-y-2">

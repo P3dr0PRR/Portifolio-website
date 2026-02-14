@@ -8,7 +8,7 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   
   return (
-    <section className="relative bg-transparent flex justify-between items-center pr-6 border-b-2 border-gray-400 mb-2">
+    <section className="relative bg-white/10 flex justify-between items-center pr-6 border-b-2 border-gray-400 mb-2">
        <img src={logo} alt="Logo" className=" mr-2w-40 h-28 md:w-44 md:h-36" />
 
       <div className="absolute right-6 top-1/2 -translate-y-1/2 flex items-center justify-between">

@@ -10,7 +10,7 @@ import { Github, Linkedin } from "lucide-react";
 export function Home() {
   return (
     <>
-  <section className="bg-pink-600 mt-8 mb-4 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden">
+  <section className="mt-8 mb-4 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden">
   <div className="w-full max-w-6xl mx-auto px-6 flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-40 xl:gap-80">
         <div className="flex flex-col p-4 border border-purple-900 items-center text-center w-fit mx-auto lg:mx-0 lg:items-start lg:text-left">
           <div className="flex flex-col justify-center items-center lg:items-start">

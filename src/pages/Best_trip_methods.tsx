@@ -22,7 +22,7 @@ const tools = [
 
 export function BestTripMethods() {
   return (
-    <section className="mx-32 bg-pink-400">
+    <section className="mx-32 ">
       <header className="mb-4 flex flex-col items-center">
         <p className="text-xl font-bold mb-4 text-purple-500">
           ../projetos/Best_trip_methods
@@ -49,7 +49,7 @@ export function BestTripMethods() {
 
       <article className="mb-4">
         <section className="my-4 border-y border-gray-300 py-4 px-2 flex justify-between text-gray-300">
-          <div className="flex bg-lime-800 gap-2">
+          <div className="flex gap-2">
             <UserRound className="h-5 w-5" />
             <p className="text-sm">User Profile</p>
           </div>
@@ -81,7 +81,7 @@ export function BestTripMethods() {
       <article className="mb-4 flex flex-col gap-4">
         <header>
           <div className="border-l-8 border-purple-500 pl-4">
-            <h2 className="text-4xl text-gray-50 group bg-lime-400 w-fit">
+            <h2 className="text-4xl text-gray-50 group  w-fit">
               <span className="hover:underline">Overview</span>
               <span className="mx-2 opacity-0 group-hover:opacity-100 text-purple-500 transition-opacity">
                 #
@@ -95,7 +95,7 @@ export function BestTripMethods() {
 
         <div>
           <div className="border-l-8 border-purple-500 pl-4">
-            <h2 className="text-xl text-gray-50 group bg-lime-400 w-fit">
+            <h2 className="text-xl text-gray-50 group  w-fit">
               <span className="hover:underline">Tech Stack</span>
               <span className="mx-2 opacity-0 group-hover:opacity-100 text-purple-500 transition-opacity">
                 #
@@ -115,7 +115,7 @@ export function BestTripMethods() {
 
         <div>
           <div className="border-l-8 border-purple-500 pl-4">
-            <h2 className="text-xl text-gray-50 group bg-lime-400 w-fit">
+            <h2 className="text-xl text-gray-50 group  w-fit">
               <span className="hover:underline">Key Features</span>
               <span className="mx-2 opacity-0 group-hover:opacity-100 text-purple-500 transition-opacity">
                 #
@@ -134,7 +134,7 @@ export function BestTripMethods() {
 
         <div>
           <div className="border-l-8 border-purple-500 pl-4">
-            <h2 className="text-xl text-gray-50 group bg-lime-400 w-fit">
+            <h2 className="text-xl text-gray-50 group  w-fit">
               <span className="hover:underline">Technical Challenges</span>
               <span className="mx-2 opacity-0 group-hover:opacity-100 text-purple-500 transition-opacity">
                 #
@@ -155,7 +155,7 @@ export function BestTripMethods() {
       <article className="mb-4">
         <header>
           <div className="border-l-8 border-purple-500 pl-4">
-            <h2 className="text-2xl md:text-4xl text-gray-50 group bg-lime-400 w-fit">
+            <h2 className="text-2xl md:text-4xl text-gray-50 group  w-fit">
               <span className="hover:underline">Demonstration images of the project</span>
               <span className="mx-2 opacity-0 group-hover:opacity-100 text-purple-500 transition-opacity">
                 #

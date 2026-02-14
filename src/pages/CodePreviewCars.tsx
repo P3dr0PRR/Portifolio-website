@@ -1,6 +1,6 @@
 export function CodePreviewCard() {
   return (
-    <aside className="w-full max-w-xl rounded-2xl border border-white/10 bg-white/5 shadow-lg backdrop-blur">
+    <aside className="w-full max-w-xl rounded-2xl border border-white/10 bg-gray-900 shadow-lg backdrop-blur">
       <header className="flex items-center justify-between border-b border-white/10 px-4 py-3">
         <div className="flex items-center gap-2">
           <span className="h-3 w-3 rounded-full bg-red-500/80" />

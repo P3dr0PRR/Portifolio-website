@@ -19,7 +19,7 @@ const techs = [
 export function About() {
   return (
     <section>
-      <div className="flex flex-col md:flex-row justify-center items-center md:justify-between px-6 gap-4 bg-lime-400">
+      <div className="flex flex-col md:flex-row justify-center items-center md:justify-between px-6 gap-4">
         <img
           src={Pedro}
           alt="Pedro"
@@ -55,16 +55,17 @@ export function About() {
         </div>
       </div>
 
-      <section aria-labelledby="skills-title" className="my-4 bg-gray-400">
+      <section aria-labelledby="skills-title" className="my-4 ">
         <h2 id="skills-title" className="sr-only">
           Technical Skills
         </h2>
 
-        <div className="flex gap-2 justify-evenly">
-          {techs.map((tech) => (
+        <div className="overflow-hidden border-x-8 border-purple-500">
+          <div className="flex gap-4">
+            {[...techs, ...techs, ...techs].map((tech) => (
             <div
               key={tech.name}
-              className="border border-gray-300 rounded-md flex flex-col items-center"
+              className="border border-gray-300 rounded-md marquee w-max flex flex-col items-center gap-6"
             >
               <img
                 src={tech.img}
@@ -74,6 +75,7 @@ export function About() {
               <p className="text-gray-300 text-center">{tech.name}</p>
             </div>
           ))}
+          </div>
         </div>
       </section>
     </section>
