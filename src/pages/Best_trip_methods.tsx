@@ -23,7 +23,7 @@ const tools = [
 export function BestTripMethods() {
   return (
     <section className="md:mx-32 ">
-      <header className="mb-4 flex flex-col items-center bg-pink-300 ">
+      <header className="mb-4 flex flex-col items-center ">
         <p className="text-xl font-bold mb-4 text-purple-500">
           ../projetos/Best_trip_methods
         </p>
